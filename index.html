@@ -5,12 +5,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Javascript Drumkit</title>
+  <title>Javascript Drum Machine</title>
 
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<span><h1>Vanilla Javascript Drum Machine</h1></span>
+<span><h2>Use keys on keyboard to trigger Rhythm Ace samples</h2></span>
+
 
 <div id='drum-machine'>
 
@@ -55,6 +59,7 @@
 
 </div>
 
+
   <audio data-key="65" src="sounds/clap.wav"></audio>
   <audio data-key="83" src="sounds/hihat.wav"></audio>
   <audio data-key="68" src="sounds/kick.wav"></audio>
@@ -66,10 +71,11 @@
   <audio data-key="76" src="sounds/tink.wav"></audio>
 
 <script>
-
 function playSound(event) {
     const audio = document.querySelector(`audio[data-key="${event.keyCode}"]`);
     const key = document.querySelector(`.key[data-key="${event.keyCode}"`);
+    console.log("Audio: ", audio);
+
     if(!audio) return //stop the function from running all together   
     audio.currentTime=0; //rewind to the start    
     audio.play();
@@ -84,7 +90,6 @@ function removeTransition(event) {
 const keys = document.querySelectorAll('.key');
 keys.forEach(key => key.addEventListener('transitionend', removeTransition));
 window.addEventListener('keydown', playSound) 
-
 </script>
 
 
