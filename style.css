@@ -9,6 +9,10 @@ body,html {
   text-align: center;
 }
 
+a {
+  text-decoration: none;
+}
+
 #drum-machine {
   height: 420px;
   width: 420px;
