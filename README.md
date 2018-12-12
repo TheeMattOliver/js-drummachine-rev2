@@ -10,3 +10,4 @@
 
 ### Try it with sound [here](https://theemattoliver.github.io/javascript-drumkit).
 
+![](drum-demo.gif)
