@@ -8,3 +8,5 @@
 
 ### Probably doesn't work on a phone.
 
+### Try it with sound [here](https://theemattoliver.github.io/javascript-drumkit).
+
