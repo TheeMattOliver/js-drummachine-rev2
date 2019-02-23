@@ -14,12 +14,13 @@ a {
 }
 
 #drum-machine {
-  height: 620px;
-  width: 620px;
+  height: 560px;
+  width: 560px;
   margin-top: auto;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: auto;
+  margin-bottom: 4rem;
+  padding-top: 1rem;
   background-color: #D3D3D3;
   border: 2px solid #908b85;
   border-radius: 8px;
@@ -30,7 +31,7 @@ a {
   display:flex;
   flex:.5;
   flex-wrap: wrap;                     /* enable flex items to wrap */
-  min-height:60vh;
+  min-height:40vh;
   padding-bottom: .4rem;
   align-items: center;
   justify-content: center;
@@ -54,6 +55,7 @@ a {
   transform:scale(1.1);
   border-color:#ff1500;
   box-shadow: 0 0 10px #ff1500;
+  color: #ff1500;
 }
 
 kbd {
