@@ -4,4 +4,6 @@
 
 Hook up a hardware MIDI controller or trigger samples with your keyboard!!! 
 
+Try it out [here](https://theemattoliver.github.io/js-drummachine-rev2/).
+
 ![](demo.gif)
