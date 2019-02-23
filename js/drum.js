@@ -111,8 +111,6 @@ var midiNumber = {
    9:'A0'
 };
 
-
-
 // enable WebMIDI
 WebMidi.enable(function (err) {
 
@@ -138,7 +136,7 @@ WebMidi.enable(function (err) {
   input.addListener('noteon', "all",
     function (e) {
       console.log("Received 'noteon' message (" + e.note.name + e.note.octave + ").");
-      playSound(e)
+      playSound(e.note.name)
     }
   );
 
