@@ -1,5 +1,5 @@
-# javascript-drumkit
+# javascript-drumkit-v2
 
-## Rev 2 of the [Javascript drumkit](https://theemattoliver.github.io/javascript-drumkit), only with MIDI enabled! 
+## Rev 2 of the [Javascript drumkit](https://theemattoliver.github.io/javascript-drumkit) -- this time, with MIDI enabled.
 
-Control the samples in the browser with your MIDI controller. 
+Hook up a hardware MIDI controller and go to town. 
