@@ -14,23 +14,23 @@ a {
 }
 
 #drum-machine {
-  height: 420px;
-  width: 420px;
-  margin-top: 5%;
+  height: 620px;
+  width: 620px;
+  margin-top: auto;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: auto;
   background-color: #D3D3D3;
   border: 2px solid #908b85;
   border-radius: 8px;
   box-shadow: 7px 10px 34px 1px rgba(0, 0, 0, 0.68), inset -1px -6px 12px 0.1px #89847e;
 }
 
-
 .keys {
   display:flex;
   flex:.5;
   flex-wrap: wrap;                     /* enable flex items to wrap */
-  min-height:50vh;
+  min-height:60vh;
   padding-bottom: .4rem;
   align-items: center;
   justify-content: center;
