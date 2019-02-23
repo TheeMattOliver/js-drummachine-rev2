@@ -17,3 +17,9 @@ function removeTransition(event) {
 const keys = document.querySelectorAll('.key');
 keys.forEach(key => key.addEventListener('transitionend', removeTransition));
 window.addEventListener('keydown', playSound) 
+
+if (navigator.requestMIDIAccess) {
+    console.log('This browser supports WebMIDI!');
+} else {
+    console.log('WebMIDI is not supported in this browser.');
+}

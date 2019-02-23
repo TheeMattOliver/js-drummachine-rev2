@@ -52,8 +52,8 @@ a {
 
 .playing {
   transform:scale(1.1);
-  border-color:#ffc600;
-  box-shadow: 0 0 10px #ffc600;
+  border-color:#ff1500;
+  box-shadow: 0 0 10px #ff1500;
 }
 
 kbd {
