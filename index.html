@@ -13,82 +13,87 @@
 </head>
 <body>
 
-<span><h1>Drum Machine with WebMIDI</h1></span>
+<span><h1>MIDI Drum Machine!</h1></span>
 
 <div id='drum-machine'>
 
   <div class="keys">
-    <a href="#"><div data-key="65" class="key">
-      <kbd>A</kbd>
-      <span class="sound">clap</span>
+     <!-- top row, L to R -->
+    <a href="#"><div data-key="90" midi-val="48" class="key">
+      <kbd>Z</kbd>
+      <span class="sound">noise</span>
     </div></a>
-    <div data-key="83" class="key">
-      <kbd>S</kbd>
-      <span class="sound">hihat</span>
+    <div data-key="79" midi-val="49" class="key">
+      <kbd>O</kbd>
+      <span class="sound">conga</span>
     </div>
-    <div data-key="68" class="key">
+    <div data-key="77" midi-val="50" class="key">
+      <kbd>M</kbd>
+      <span class="sound">ride</span>
+    </div>
+    <div data-key="80" midi-val="51" class="key">
+      <kbd>P</kbd>
+      <span class="sound">crash</span>
+    </div>
+
+     <!-- 2nd row, L to R -->
+    <div data-key="81" midi-val="44" class="key">
+      <kbd>Q</kbd>
+      <span class="sound">hi tom</span>
+    </div>
+    <div data-key="87" midi-val="45" class="key">
+      <kbd>W</kbd>
+      <span class="sound">mid tom</span>
+    </div>
+    <div data-key="69" midi-val="46" class="key">
+      <kbd>E</kbd>
+      <span class="sound">lo tom</span>
+    </div>
+    <div data-key="78" midi-val="47" class="key">
+      <kbd>N</kbd>
+      <span class="sound">bell</span>
+    </div>
+
+    <!-- 3rd row, L to R -->
+     <div data-key="73" midi-val="40" class="key">
+      <kbd>I</kbd>
+      <span class="sound">snare2</span>
+    </div>
+
+     <div data-key="85" midi-val="41" class="key">
+      <kbd>U</kbd>
+      <span class="sound">hh cl</span>
+    </div>
+
+     <div data-key="82" midi-val="42" class="key">
+      <kbd>R</kbd>
+      <span class="sound">hh op</span>
+    </div>
+
+     <div data-key="76" midi-val="43" class="key">
+      <kbd>L</kbd>
+      <span class="sound">clap</span>
+    </div>
+
+    <!-- bottom bank, L to R -->
+     <div data-key="68" midi-val="36" class="key">
       <kbd>D</kbd>
       <span class="sound">kick</span>
     </div>
-    <div data-key="70" class="key">
+
+     <div data-key="70" midi-val="37" class="key">
       <kbd>F</kbd>
-      <span class="sound">openhat</span>
+      <span class="sound">kick2</span>
     </div>
-    <div data-key="71" class="key">
-      <kbd>G</kbd>
-      <span class="sound">boom</span>
-    </div>
-    <div data-key="72" class="key">
-      <kbd>H</kbd>
-      <span class="sound">ride</span>
-    </div>
-    <div data-key="74" class="key">
+
+     <div data-key="74" midi-val="38" class="key">
       <kbd>J</kbd>
-      <span class="sound">snare</span>
+      <span class="sound">tink</span>
     </div>
-    <div data-key="75" class="key">
+
+    <div data-key="75" midi-val="39" class="key">
       <kbd>K</kbd>
-      <span class="sound">tom</span>
-    </div>
-     <div data-key="76" class="key">
-      <kbd>L</kbd>
-      <span class="sound">tink</span>
-    </div>
-
-     <div data-key="76" class="key">
-      <kbd>L</kbd>
-      <span class="sound">tink</span>
-    </div>
-
-     <div data-key="76" class="key">
-      <kbd>L</kbd>
-      <span class="sound">tink</span>
-    </div>
-
-     <div data-key="76" class="key">
-      <kbd>L</kbd>
-      <span class="sound">tink</span>
-    </div>
-
-
-     <div data-key="76" class="key">
-      <kbd>L</kbd>
-      <span class="sound">tink</span>
-    </div>
-
-     <div data-key="76" class="key">
-      <kbd>L</kbd>
-      <span class="sound">tink</span>
-    </div>
-
-     <div data-key="76" class="key">
-      <kbd>L</kbd>
-      <span class="sound">tink</span>
-    </div>
-
-    <div data-key="76" class="key">
-      <kbd>L</kbd>
-      <span class="sound">kick</span>
+      <span class="sound">snare</span>
     </div>
 
 
@@ -96,15 +101,27 @@
 
 </div>
 
-  <audio data-key="68" src="sounds/kick.wav"></audio>
-  <audio data-key="65" src="sounds/clap.wav"></audio>
-  <audio data-key="83" src="sounds/hihat.wav"></audio> 
-  <audio data-key="70" src="sounds/openhat.wav"></audio>
-  <audio data-key="71" src="sounds/boom.wav"></audio>
-  <audio data-key="72" src="sounds/ride.wav"></audio>
-  <audio data-key="74" src="sounds/snare.wav"></audio>
-  <audio data-key="75" src="sounds/tom.wav"></audio>
-  <audio data-key="76" src="sounds/tink.wav"></audio>
+  <audio data-key="68" midi-val="36" src="sounds/kick.wav"></audio>
+  <audio data-key="70" midi-val="37" src="sounds/kick2.wav"></audio>
+  <audio data-key="74" midi-val="38" src="sounds/tink.wav"></audio>
+  <audio data-key="75" midi-val="39" src="sounds/snare.wav"></audio>
+
+  <audio data-key="73" midi-val="40" src="sounds/snare2.wav"></audio>
+  <audio data-key="85" midi-val="41" src="sounds/hihat.wav"></audio> 
+  <audio data-key="82" midi-val="42" src="sounds/openhat.wav"></audio>
+  <audio data-key="76" midi-val="43" src="sounds/clap.wav"></audio>
+  
+  <audio data-key="81" midi-val="44" src="sounds/htom.wav"></audio>
+  <audio data-key="87" midi-val="45" src="sounds/mtom.wav"></audio>
+  <audio data-key="69" midi-val="46" src="sounds/ltom.wav"></audio>
+  <audio data-key="78" midi-val="47" src="sounds/bell.wav"></audio>
+
+  <audio data-key="90" midi-val="48" src="sounds/noise.wav"></audio>
+  <audio data-key="79" midi-val="49" src="sounds/congahi.wav"></audio>
+  <audio data-key="77" midi-val="50" src="sounds/ride.wav"></audio>
+  <audio data-key="80" midi-val="51" src="sounds/crash.wav"></audio>
+  
+  
 
 <script src="js/drum.js"></script>
 

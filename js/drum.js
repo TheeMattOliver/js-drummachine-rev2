@@ -53,6 +53,14 @@ WebMidi.enable(function (err) {
     midiKey.classList.add('playing'); 
   }
 
+  function removeTransition(event) {
+  if (event.propertyName !== 'transform') return; // skip it if it's not a transform
+  this.classList.remove('playing');
+  }
+
+  const keys = document.querySelectorAll('.key');
+  keys.forEach(key => key.addEventListener('transitionend', removeTransition));
+
   // Listen for a 'note on' message on all channels
   input.addListener('noteon', "all",
     function (e) {
